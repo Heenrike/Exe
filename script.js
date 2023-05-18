@@ -2,15 +2,25 @@ let botao = document.querySelector(".adicionar");
 let apagar = document.querySelector(".apagar");
 let redefinir = document.querySelector(".redefinir");
 
-const numero = document.querySelector(".numeros");
-const body = document.querySelector("body");
+let numero = document.querySelector(".numeros");
+let body = document.querySelector("body");
+let meuBotao = document.getElementById("meuBotao");
+meuBotao.addEventListener("click", function() {
+let meuInput = document.getElementById("meuInput");
+  let soma = meuInput.value;
+  // Faça algo com o valor do input aqui, como enviá-lo para um servidor
+console.log(soma)
+ 
+});
 
 let number1 = 0;
 
 function soma() {
+  let cal = parseInt(meuInput.value)
   let num = parseInt(numero.innerText);
-  let number1 = num + 1;
+  let number1 = num + cal;
   numero.innerText = number1;
+  botao.innerText = "Adicionar"+ " + " +cal
 
 }
 
@@ -26,3 +36,5 @@ function apaga (){
 botao.addEventListener("click", soma);
 redefinir.addEventListener("click", zerar);
 apagar.addEventListener("click", apaga)
+
+
