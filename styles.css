@@ -1,0 +1,17 @@
+.redefinir {
+  display: grid;
+
+}
+.botaons{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-top: 50px;
+   
+
+
+}
+.numeros{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
