@@ -2,14 +2,56 @@
   display: grid;
 
 }
-.botaons{
+.botaons {
     display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   margin-top: 50px;
-
+    grid-template-columns: 200px 200px 200px;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 30px;
+    border: none;
 }
+.botaons button{
+    background: linear-gradient( #eceae0, #b1adad);
+border: none;
+padding: 20px 40px;
+border-radius: 10px;}
+
 .numeros{
     text-align: center;
     font-size: 40px;
     padding-top: 20px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    padding-top: 220px;
+    
+    
+}
+.input input{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 9px;
+}
+.input button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 9px;
+    background-color: #ccc;
+
+}
+
+.redefinir button:hover{
+    background-color: #000000;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(241,241,241);
+    background: -moz-linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(163,254,242,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(163,254,242,1) 100%);
+    background: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(163,254,242,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f1f1",endColorstr="#a3fef2",GradientType=1);
+    height: 100vh;
+    margin:  0;
+
 }
